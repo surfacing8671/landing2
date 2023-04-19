@@ -3,8 +3,8 @@ import Link from "next/link";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import { Navbar } from "../components/Navbar/Navbar";
-//import { ThirdwebProvider } from "@thirdweb-dev/react";
-import { CronosBeta, Polygon, Arbitrum } from "@thirdweb-dev/chains";
+
+
 import Sidebar from "../components/Sidebar";
 import { Card, Col, Container, Grid, Row, Spacer } from "@nextui-org/react";
 //import {Profile} from "../components/sign"
