@@ -1,11 +1,79 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+.nextui-c-hhqfap-gqZKcP-disableBlur-false .nextui-c-egxOLa {
+  background: rgba(255, 255, 255, 0) !important;
+  
+ 
+}
+.nextui-c-iTPCAT-VujqA-disableBlur-false .nextui-c-jklhtj:where(.nextui-c-ewlcFW) {
+  background: rgba(255, 255, 255, 0) !important;
 
+}
+.nextui-c-iTPCAT-VujqA-disableBlur-false {
+  background: rgba(236, 231, 231, 0.466) !important;
+
+}
+.nextui-c-egxOLa {
+  width: 100%;
+  height: var(--nextui--navbarHeight);
+  min-height: var(--nextui--navbarHeight);
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  box-sizing: border-box;
+  color: inherit;
+  padding-left: var(--nextui--navbarPadding);
+  padding-right: var(--nextui--navbarPadding);
+  background: #ffffff00 !important;
+  max-width: var(--nextui--navbarContainerMaxWidth);
+  z-index: var(--nextui-zIndices-5);
+}
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Inter, Helvetica, Arial, sans-serif;
+}
 :root {
+  --max-width: 1100px;
+  --border-radius: 12px;
+  --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
+    'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
+    'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
+
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+
+  --primary-glow: conic-gradient(
+    from 180deg at 50% 50%,
+    #16abff33 0deg,
+    #0885ff33 55deg,
+    #54d6ff33 120deg,
+    #0071ff33 160deg,
+    transparent 360deg
+  );
+  --secondary-glow: radial-gradient(
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 0)
+  );
+
+  --tile-start-rgb: 239, 245, 249;
+  --tile-end-rgb: 228, 232, 233;
+  --tile-border: conic-gradient(
+    #00000080,
+    #00000040,
+    #00000030,
+    #00000020,
+    #00000010,
+    #00000010,
+    #00000080
+  );
+
+  --callout-rgb: 238, 240, 241;
+  --callout-border-rgb: 172, 175, 176;
+  --card-rgb: 180, 185, 188;
+  --card-border-rgb: 131, 134, 135;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -13,7 +81,89 @@
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
+
+    --primary-glow: radial-gradient(rgba(1, 65, 255, 0.4), rgba(1, 65, 255, 0));
+    --secondary-glow: linear-gradient(
+      to bottom right,
+      rgba(1, 65, 255, 0),
+      rgba(1, 65, 255, 0),
+      rgba(1, 65, 255, 0.3)
+    );
+
+    --tile-start-rgb: 2, 13, 46;
+    --tile-end-rgb: 2, 5, 19;
+    --tile-border: conic-gradient(
+      #ffffff80,
+      #ffffff40,
+      #ffffff30,
+      #ffffff20,
+      #ffffff10,
+      #ffffff10,
+      #ffffff80
+    );
+
+    --callout-rgb: 20, 20, 20;
+    --callout-border-rgb: 108, 108, 108;
+    --card-rgb: 100, 100, 100;
+    --card-border-rgb: 200, 200, 200;
   }
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.alighnRight{
+  justify-content:center !important;
+  margin-top: 5px !important;
+}
+.Navbar_nav__UT9G1 {
+  padding-left: 2em;
+  padding-right: 17em !important;
+  justify-content: center !important;
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  /* align-items: end; */
+  
+  width: 98%;
+  max-width: 1260px;
+  background-color: transparent !important;
+}
+.cards{
+  background-color: #7007ac42 !important;
+    height: 200px !important;
+    border-radius: 100px 10px 100px 10px !important;
+    border-color: #f70808 !important;
+    border-width: 5px !important;
+    bottom: 0 !important;
+    box-shadow: var(--shd,0 1px 4px rgba(0,0,0,.6));
+    left: 0 !important;
+    position: absolute ;
+    right: 0 !important;
+    top: 0 !important;
+}
+
+.cardsInner{
+  justify-content: center;
+  color: #ffffff;
+  text-align: center;
+}
+
+.nextui-c-fBJhTY {
+  appearance: none;
+  background: #fe2323f0 !important;
+  border: none;
+  cursor: pointer;
+   padding: 100% !important;
+  transition: box-shadow 0.25s ease 0s, opacity 0.25s ease 0s;
+}
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
 }
 
 body {
@@ -25,3 +175,243 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.Navbar_nav__UT9G1 {
+  display: none;
+}
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(25%, auto));
+  width: var(--max-width);
+  max-width: 100%;
+}
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  color-scheme: dark;
+}
+card{
+  color: #126bc5 !important;
+}
+fontBlack{
+  color: #000000 !important;
+
+}
+
+body {
+  color: #ffffff;
+  background: #191c1f;
+  --color-primary: #fada3f;
+  --color-secondary: #ff2136;
+  --color-tertiary: #0294fe;
+  --color-quaternary: #9b4dff;
+  --card-background: #d408b2;
+  --highlighted-background: #202326;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+
+h3 {
+  font-size: 22px;
+  line-height: 28px;
+  font-weight: 700;
+  margin-bottom: 0px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+p {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-color: rgb(255, 255, 255);
+  color: rgb(25, 28, 31) !important;
+  background: rgba(110, 105, 105, 0.397) !important;
+  height: 40px;
+  border: 1px solid transparent;
+  border-radius: 12px;
+  padding: 6px 16px;
+  font-weight: 600;
+  font-family: inherit;
+  transition: all 0.15s ease-in-out 0s;
+}
+
+button:hover {
+  cursor: pointer;
+  background: rgb(255, 255, 255);
+  border-color: rgb(255, 255, 255);
+  color: rgb(25, 28, 31);
+}
+.connectButton{
+  width: 100% !important;
+  height: 50px !important;
+  border: 1px solid transparent;
+  border-radius: 12px !important;
+  margin-bottom: 2% !important;
+}
+
+.connectButton:disabled{
+  background-color: #5f6163 !important;
+  width: 100% !important;
+  height: 50px !important;
+  border: 1px solid transparent;
+  border-radius: 12px !important;
+  margin-bottom: 2% !important;
+}
+  /* Mobile */
+  @media (max-width: 700px) {
+    .Navbar_nav__UT9G1 {
+      display: none;
+    }
+    .content {
+      padding: 4rem;
+    }
+    [data-rk] .ju367v85 {
+      padding-top: 30px !important;
+  }
+  [data-rk] .ju367v6l {
+    padding-bottom: 5px !important;
+}
+    .grid {
+      grid-template-columns: 1fr;
+      margin-bottom: 120px;
+      max-width: 320px;
+      text-align: center;
+    }
+  
+    .card {
+      padding: 1rem 2.5rem;
+    }
+  
+    .card h2 {
+      margin-bottom: 0.5rem;
+    }
+  
+    .center {
+      padding: 8rem 0 6rem;
+    }
+  
+    .center::before {
+      transform: none;
+      height: 300px;
+    }
+  
+    .description {
+      font-size: 0.8rem;
+    }
+  
+    .description a {
+      padding: 1rem;
+    }
+  
+    .description p,
+    .description div {
+      display: flex;
+      justify-content: center;
+      position: fixed;
+      width: 100%;
+    }
+  
+    .description p {
+      align-items: center;
+      inset: 0 0 auto;
+      padding: 2rem 1rem 1.4rem;
+      border-radius: 0;
+      border: none;
+      border-bottom: 1px solid rgba(var(--callout-border-rgb), 0.25);
+      background: linear-gradient(
+        to bottom,
+        rgba(var(--background-start-rgb), 1),
+        rgba(var(--callout-rgb), 0.5)
+      );
+      background-clip: padding-box;
+      backdrop-filter: blur(24px);
+    }
+  
+    .description div {
+      align-items: flex-end;
+      pointer-events: none;
+      inset: auto 0 0;
+      padding: 2rem;
+      height: 200px;
+      background: linear-gradient(
+        to bottom,
+        transparent 0%,
+        rgb(var(--background-end-rgb)) 40%
+      );
+      z-index: 1;
+    }
+  }
+  
+  /* Tablet and Smaller Desktop */
+  @media (min-width: 701px) and (max-width: 1120px) {
+    .grid {
+      grid-template-columns: repeat(2, 50%);
+    }
+    .Navbar_nav__UT9G1 {
+      display: none;
+    }
+  }
+  
+
+
+.footerSpacing {
+  padding-top: 90px;
+}
+
+.footerSocialImage {
+  max-width: 10px;
+  width: 10px;
+  margin: auto;
+}
+
+.MuiCardActionArea-root {
+  display: block !important;
+}
+
+.footerSocialHeading {
+  padding-top: 150px;
+  padding-bottom: 50px;
+}
+
+.footerSocialText {
+  font-weight: 700 !important;
+  font-size: 1em;
+  color: rgb(0, 0, 0) !important;
+}
+
+
+
+
+
+

@@ -1,0 +1,238 @@
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  left: 36px;
+  top: 36px;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: #373a47;
+}
+
+/* Color/shape of burger icon bars on hover*/
+.bm-burger-bars-hover {
+  background: #a90000;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #bdc3c7;
+}
+
+/*
+Sidebar wrapper styles
+Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+*/
+.bm-menu-wrap {
+  position: fixed;
+  height: 100%;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: #373a47;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #b8b7ad;
+  padding: 0.8em;
+}
+
+/* Individual item */
+.bm-item {
+  display: inline-block;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+.navContainer {
+  background-color: transparent !important;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 3;
+  
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+}
+.heroCtaContainer {
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+}
+.heroCta {
+
+  
+  width: 100% !important;
+  margin-left: 5% !important;
+  padding: 12px 40px;
+  border: 3px solid hsla(0, 95%, 44%, 0.938);
+  
+  background-clip: padding-box;
+  background-color: hsla(0, 0%, 100%, 0.9);
+  border-radius: 8px;
+  color: #0d0d0d;
+  font-size: 16px;
+  font-weight: 500;
+ 
+  line-height: 20px;
+  transition: opacity 0.2s;
+  width: 280px !important;
+}
+.button {
+  margin-left: 8% !important;
+}
+.tab {
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0.5em 0.75em;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  background-color: transparent;
+  transition: all 0.15s ease-in-out;
+  width: 20%;
+  height: 100%;
+  min-height: 62px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.nav {
+  padding-left: 2em;
+  padding-right: 2em;
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  align-items: center;
+  justify-content: space-between;
+  width: 98%;
+  max-width: 1260px;
+  background-color: transparent !important;
+}
+
+.navLeft {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+  transition: all 0.15s ease-in-out;
+}
+
+.navMiddle {
+  display: flex;
+  margin-left: 12px;
+  flex-direction: row;
+  align-items: center;
+  gap: 24px;
+}
+
+.link {
+  color: rgba(255, 255, 255, 0.6);
+  margin-left: 20%;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  line-height: 16px;
+  transition: color 0.3s ease-in-out;
+}
+
+.link:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+.homeLink:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.navRight {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+}
+
+.profileImage {
+  margin-top: 6px;
+  transition: all 0.15s ease-in-out;
+}
+
+.profileImage:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.homeLink {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.buttonLink:hover {
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5);
+}
+.collapse {
+  display: none;
+  margin-left: 12px;
+  flex-direction: row;
+  align-items: center;
+  gap: 24px;
+}
+/* Sreens less than 720px */
+
+@media (min-width: 700px) {
+  .navConnect1 {
+    display: none !important;
+  }
+
+  
+  .collapse {
+    display: flex;
+    margin-left: 12px;
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+  }
+}
+@media (max-width: 700px) {
+
+  .navConnect {
+    display: none !important;
+  }
+
+  
+  .collapse {
+    display: flex;
+    margin-left: 12px;
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+  }
+}

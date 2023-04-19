@@ -1,0 +1,90 @@
+
+.h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+.nftGridContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1%;
+  width: 100%;
+}
+
+.nftContainer {
+  width: 17.8%;
+  margin: 8px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  backface-visibility: hidden;
+  outline: 1px solid rgba(255, 255, 255, 0.1);
+  transform: translate3d(0px, 0px, 0px);
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  max-height: 382px;
+  transition: all 0.25s ease-in-out;
+}
+
+.chainButton{
+  background-color: transparent !important;
+  border: none;
+  height: 30% !important;
+  
+  
+  }
+.nftContainer:hover {
+  cursor: pointer;
+  transform: translate3d(0px, -4px, 0px);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+.cardSwitch{
+  background-color: #00265700 ;
+ margin-bottom: 20px !important;
+  border:solid !important;
+  border-radius: 5px !important;
+  border-color: #000000!important;
+  width: 120px !important;
+    display: inline-flex;
+    height: 120px !important;
+    margin-top: 26px !important;
+  
+
+}
+
+.chainImage{
+  background-color: rgba(35, 38, 44, 0.938) !important;
+}
+
+.title {
+  padding: 8px;
+  font-size: 3rem;
+  margin-bottom: 8px;
+}
+
+/* Responsive */
+
+@media (min-width: 1200px) {
+}
+
+@media (min-width: 760px) and (max-width: 1200px) {
+  .nftContainer {
+    width: 22%;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 760px) {
+  .nftContainer {
+    width: 29%;
+  }
+}
+
+/* Less than 600 */
+@media (max-width: 600px) {
+  .nftContainer {
+    width: 100% !important;
+  }
+}
+
