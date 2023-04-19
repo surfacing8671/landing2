@@ -7,6 +7,20 @@ import { Navbar } from "../components/Navbar/Navbar";
 
 import Sidebar from "../components/Sidebar";
 import { Card, Col, Container, Grid, Row, Spacer } from "@nextui-org/react";
+import { LiFiWidget, WidgetConfig } from '@lifi/widget';
+import { useMemo } from 'react';
+import dynamic from 'next/dynamic';
+import { LoadingIndicator } from '../components/LoadingIndicator';
+
+export const LiFiWidgetNext = dynamic(
+  () => import('../components/Widget').then((module) => module.Widget) as any,
+  {
+    ssr: false,
+    loading: () => <LoadingIndicator />,
+  },
+);
+
+
 //import {Profile} from "../components/sign"
 //import { Card, DonutChart, Title } from "@tremor/react";
 /**
@@ -14,7 +28,9 @@ import { Card, Col, Container, Grid, Row, Spacer } from "@nextui-org/react";
  * Free to customize as you see fit.
  */
 
+
 const Home: NextPage = () => {
+  
  
   return ( 
     <><div className={styles.mobile1}><Sidebar  /> </div><Navbar />
@@ -73,6 +89,8 @@ const Home: NextPage = () => {
                   </Link>
                  
                 </div>
+                <LiFiWidgetNext />
+                <Spacer y={1}/>
                 <div className={styles.dexscreenerEmbed}>
                   <iframe
                     className={styles.dexscreenerEmbediframe}
@@ -315,3 +333,5 @@ Pepe is here to make memecoins great again. Launched stealth with no presale, ze
 };
 
 export default Home;
+
+
