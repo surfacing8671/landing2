@@ -3,9 +3,8 @@ import Image from "next/image";
 import { Link } from 'react-scroll';
 import  Sidebar  from "../Sidebar";
 import styles from "./Navbar.module.css";
-//import { ConnectButton } from '@rainbow-me/rainbowkit';
-//import { useAccount } from 'wagmi'
-import { largeScreenMinWidth } from "@rainbow-me/rainbowkit/dist/css/sprinkles.css";
+
+
 import { Button, Row } from "@nextui-org/react";
 
 
