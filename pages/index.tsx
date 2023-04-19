@@ -84,7 +84,61 @@ const Home: NextPage = () => {
           </div>
         </div>
         <Container>
-          <Row>
+        <Grid.Container gap={2} justify="center">
+      <Grid xs={4}>
+      <div className={styles.heroBodyContainer}>
+              <div className={styles.heroBody}>
+                <h1 className={styles.heroTitle}>
+                  <span className={styles.heroTitleGradient}>
+                    About
+                  </span></h1>
+                <br />
+               
+                <p className={styles.heroSubtitle}>
+                Pepe is tired of watching everyone play hot potato with the endless derivative  Inu coins. The Inu’s have had their day. It’s time for the most recognizable meme in the world to take his reign as king of the memes.
+
+Pepe is here to make memecoins great again. Launched stealth with no presale, zero taxes, LP burnt and contract renounced, $PEPE is a coin for the people, forever. Fueled by pure memetic power, let $PEPE show you the way. In Lord Kek we trust.
+
+                </p>
+                <p className={styles.heroSubtitle}>
+                  stuuuffff
+
+                </p>
+
+              </div>
+              </div>
+             
+      </Grid>
+      <Grid xs={4}>
+     
+             
+      </Grid>
+      <Grid xs={4}>
+      <div className={styles.heroBodyContainer}>
+              <div className={styles.heroBody}>
+                <h1 className={styles.heroTitle}>
+                  <span className={styles.heroTitleGradient}>
+                    About
+                  </span></h1>
+                <br />
+               
+                <p className={styles.heroSubtitle}>
+                Pepe is tired of watching everyone play hot potato with the endless derivative  Inu coins. The Inu’s have had their day. It’s time for the most recognizable meme in the world to take his reign as king of the memes.
+
+Pepe is here to make memecoins great again. Launched stealth with no presale, zero taxes, LP burnt and contract renounced, $PEPE is a coin for the people, forever. Fueled by pure memetic power, let $PEPE show you the way. In Lord Kek we trust.
+
+                </p>
+                <p className={styles.heroSubtitle}>
+                  stuuuffff
+
+                </p>
+
+              </div>
+              </div>
+             
+      </Grid>
+    </Grid.Container>
+         
         <div className={styles.heroBodyContainer}>
               <div className={styles.heroBody}>
                 <h1 className={styles.heroTitle}>
@@ -94,7 +148,7 @@ const Home: NextPage = () => {
                 <br />
                
                 <p className={styles.heroSubtitle}>
-                Pepe is tired of watching everyone play hot potato with the endless derivative ShibaCumGMElonKishuTurboAssFlokiMoon Inu coins. The Inu’s have had their day. It’s time for the most recognizable meme in the world to take his reign as king of the memes.
+                Pepe is tired of watching everyone play hot potato with the endless derivative  Inu coins. The Inu’s have had their day. It’s time for the most recognizable meme in the world to take his reign as king of the memes.
 
 Pepe is here to make memecoins great again. Launched stealth with no presale, zero taxes, LP burnt and contract renounced, $PEPE is a coin for the people, forever. Fueled by pure memetic power, let $PEPE show you the way. In Lord Kek we trust.
 
@@ -138,7 +192,7 @@ Pepe is here to make memecoins great again. Launched stealth with no presale, ze
            
             </div>
           </div>
-          </Row>
+         
           </Container>
           <Container>
           <Grid.Container gap={2} justify="center">
