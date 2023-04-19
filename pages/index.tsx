@@ -30,7 +30,7 @@ export const LiFiWidgetNext = dynamic(
 
 
 const Home: NextPage = () => {
-  
+
  
   return ( 
     <><div className={styles.mobile1}><Sidebar  /> </div><Navbar />
